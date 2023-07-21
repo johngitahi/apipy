@@ -21,7 +21,7 @@ def read_phrases_from_file():
 
 phrases = read_phrases_from_file()
 
-@app.get("/")
+@app.get("/api")
 def get_message():
     phrase = random.choice(phrases)
     return {"message": f"John Gitahi is thinking {phrase} right now"}
