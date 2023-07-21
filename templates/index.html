@@ -2,6 +2,56 @@
 <html>
 <head>
     <title>John Gitahi's Thoughts</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            color: #fff;
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #thoughts {
+            text-align: center;
+            max-width: 80%;
+            padding: 20px;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            background-color: #222;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+
+            #thoughts {
+                max-width: 90%;
+            }
+        }
+
+        /* Futuristic Styles */
+        @media screen and (min-width: 2348px) {
+            body {
+                font-size: 24px;
+            }
+
+            #thoughts {
+                max-width: 60%;
+                padding: 40px;
+                border-width: 4px;
+                border-radius: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div id="thoughts"></div>
