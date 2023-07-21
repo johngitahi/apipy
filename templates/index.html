@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>John Gitahi's Thoughts</title>
+</head>
+<body>
+    <div id="thoughts"></div>
+    <script>
+        async function fetchData() {
+            const response = await fetch("http://3.141.197.216:8000/");
+            const data = await response.json();
+            document.getElementById("thoughts").innerText = data.message;
+        }
+        fetchData();
+    </script>
+</body>
+</html>
+
